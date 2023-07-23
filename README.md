@@ -1,6 +1,6 @@
 ## Fashion Website
 
-Live Link -> 
+Live Link -> https://rockyhaque.github.io/daisyMan/
 
 This is a fashion website built with HTML, CSS, and JavaScript. It features a responsive design, so it looks good on all devices. The website includes a home page, a product page, and a checkout page.
 
