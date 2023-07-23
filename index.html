@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy Man</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- Tailwind And Daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Script  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              backgroundImage: {
+                'hero-bg': "url('./images/yellow-bg.jpg')",
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header Section  -->
+    <header>
+        <!-- Navbar  -->
+        <nav class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">DaisyMan</a>
+            </div>
+            <div class="flex-none">
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    <span class="badge badge-sm indicator-item">8</span>
+                  </div>
+                </label>
+                <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                  <div class="card-body">
+                    <span class="font-bold text-lg">8 Items</span>
+                    <span class="text-info">Subtotal: $999</span>
+                    <div class="card-actions">
+                      <button class="btn btn-primary btn-block">View cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="/images/avatar.png" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold text-white">Hello there!</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn font-bold">Shop Now</button>
+              </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section  -->
+    <main>
+        <!-- Categories Section  -->
+        <Section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <!--Category Heading -->
+            <div class="text-center pb-5">
+                <h1 class="text-2xl mb-5 md:text-4xl">Huge Collection</h1>
+                <p class="text-sm">Browse for a various collections</p>
+            </div>
+
+            <!-- cards  -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Card 1 -->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="/images/shoes.avif" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>At DaisyMan, we believe that style is a reflection of your unique
+                        personality and our mission is to provide you with a diverse and
+                        trendy collection.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn font-bold">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="/images/hoodies.avif" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Clothes!</h2>
+                      <p>At DaisyMan, we believe that style is a reflection of your unique
+                        personality and our mission is to provide you with a diverse and
+                        trendy collection.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn font-bold">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="/images/perfume.avif" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Perfume!</h2>
+                      <p>At DaisyMan, we believe that style is a reflection of your unique
+                        personality and our mission is to provide you with a diverse and
+                        trendy collection.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn font-bold">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+        </Section>
+
+        <!-- Featured Section  -->
+        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="flex-1">
+                    <div>
+                        <h1 class="text-xl md:text-4xl mb-5">Easy Purchase</h1>
+                        <p>
+                            we believe that style is a reflection of your unique personality
+                            and our mission is to provide you with a diverse and trendy
+                            collection.
+                        </p>
+                        <p>
+                            Our mission is to provide you with a diverse and trendy
+                            collection.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="./images/easy-purchase.avif" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <!--Product Heading  -->
+            <div class="text-center pb-5">
+                <h1 class="text-2xl md:text-4xl mb-5">Top Products</h1>
+                <p class="text-sm">Browse for a various collections</p>
+            </div>
+
+            <!-- Product Cards  -->
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+                <!-- Card 1 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Formal Shirt</h2>
+                      <p>Our mission is to provide you with a diverse and trendy
+                        collection.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/shiny-black-leather-shoes-exude-modern-luxury-generated-by-ai_188544-36154.avif" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Formal Shoe</h2>
+                      <p>Our mission is to provide you with a diverse and trendy
+                        collection.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/blue-yellow-t-shirt-wooden-hanger-generated-by-ai_188544-42185.avif" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Trendy T-Shirt</h2>
+                      <p>Our mission is to provide you with a diverse and trendy
+                        collection.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="/images/elegant-businessman-shirt-wooden-desk-stack-generated-by-ai_188544-34678.avif" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Casual Shirt</h2>
+                      <p>Our mission is to provide you with a diverse and trendy
+                        collection.</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn">Buy Now</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section  -->
+        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+             <!--FAQ Heading  -->
+             <div class="text-center pb-5">
+                <h1 class="text-2xl md:text-4xl mb-5">Frequently Asked Questions</h1>
+                <p class="text-sm">Browse for a various collections</p>
+            </div>
+
+            <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title text-xl font-medium">
+                  What's the delivery system?
+                </div>
+                <div class="collapse-content"> 
+                  <p>No matter what platform you choose for your fashion website, avoid using ready-to-use templates. </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    How can I purchase?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Shipping for the textile industry involves the transport of fabrics and finished garments and products. One common way to move textiles across the country is by freight truck. You might opt to ship an entire truckload of textiles with full truckload shipping or just a few pallets via less-than-truckload shipping.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200 mb-2">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title text-xl font-medium">
+                    How does fashion buying work?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Fashion buyers are responsible for choosing what is sold in stores, aiming to generate the largest possible profits. A fashion buyer's role is to analyse customer buying patterns and predict future trends.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section  -->
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+        <div>
+          <span class="footer-title">Services</span> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div> 
+        <div>
+          <span class="footer-title">Company</span> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div> 
+        <div>
+          <span class="footer-title">Legal</span> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+    </footer>
+</body>
+</html>
